@@ -1,4 +1,4 @@
-# ART++ :phone: :octocat: :art:
+# ART++ :phone: :movie_camera: :art:
 
 ## My contribution
 
