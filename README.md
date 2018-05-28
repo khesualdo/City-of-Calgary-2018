@@ -1,4 +1,4 @@
-# ART++ :octocat: :phone: :art:
+# ART++ :phone: :octocat: :art:
 
 ## My contribution
 
