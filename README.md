@@ -1,4 +1,4 @@
-# ART++ :art: :moyai: :statue_of_liberty:
+# ART++ :octocat: :phone: :art:
 
 ## My contribution
 
