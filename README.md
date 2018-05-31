@@ -35,7 +35,7 @@ We decided to create a solution that will make sure our city steps it's game up 
 ## How we built it
 
 - Used C# programming language
-- Used Unity along side with ARCore to create the AR sculptures
+- Used Unity along side with ARCore
 - Used [Community Boundaries dataset](https://data.calgary.ca/Base-Maps/Community-Boundaries/ab7m-fwn6)
 - Used [Point Inclusion algorithm](https://www.geeksforgeeks.org/how-to-check-if-a-given-point-lies-inside-a-polygon/)
 
