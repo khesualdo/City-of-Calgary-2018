@@ -1,4 +1,5 @@
 # ART++ :phone: :movie_camera: :art:
+Augmented Reality application to show art in real-time in real-size.
 
 ![Demo GIF](https://github.com/00111000/City-of-Calgary-2018/blob/master/demo.gif)
 
@@ -27,11 +28,9 @@ We decided to create a solution that will make sure our city steps it's game up 
 
 ## What it does
 
-- Augmented Reality application to show art in real-time in real-size.
-  - Encourages citizens to explore
-  - Everyone can be heard and participate
-  - Shows the project before it is built
-  - Allows the city to plan ahead without huge costs
+- Encourages citizens to explore their city
+- Everyone can be heard and participate in choosing an art peice in their community
+- Shows the project before it is built, which allows the city to plan ahead without huge costs
 
 ## How we built it
 
