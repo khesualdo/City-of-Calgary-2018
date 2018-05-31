@@ -59,6 +59,7 @@ namespace City_of_Calgary_2018
                         Point[] polygonShape = new Point[polygonCoord.Length];
                         int count = 0;
 
+                        // Construct the polygon for this community
                         foreach (string coordList in polygonCoord) {
 
                             // eg1. coordList = " -114.070768950013 50.853339905893"
