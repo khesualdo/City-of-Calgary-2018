@@ -12,7 +12,7 @@ We had to use a at least one dataset from the City of Calgary.
 
 ## My contribution
 
-I worked on determining in which of Calgary communities our app is being used. For this I used the Community Boundaries dataset from the City of Calgary to get the polygon coordinates of each community. Given a single geo-coordinate I was able to determine the exact community using the Point Inclusion algorithm - [code](https://github.com/00111000/City-of-Calgary-2018/blob/52ca1eacf524b655dbf27bed5421025bac90ea9e/AR%20Pedestrian/Assets/GoogleARCore/Examples/AugmentedImage/Scripts/Boundaries.cs). The idea behind this was to record in which of the communities the people are the most active, as well as send data back to the City of Calgary, such as which art piece is the most famous, where the art piece is located, etc...
+I worked on determining in which communities our app is being used (the green text in the upper-right corner of the GIF). For this I used the Community Boundaries dataset from the City of Calgary to get the polygon coordinates of each community. Given a single geo-coordinate I was able to determine the exact community using the Point Inclusion algorithm - [code](https://github.com/00111000/City-of-Calgary-2018/blob/52ca1eacf524b655dbf27bed5421025bac90ea9e/AR%20Pedestrian/Assets/GoogleARCore/Examples/AugmentedImage/Scripts/Boundaries.cs). The idea behind this was to record in which of the communities the people are the most active, as well as send data back to the City of Calgary, such as which art piece is the most famous, where the art piece is located, etc...
 
 ## Inspiration
 
