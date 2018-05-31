@@ -8,6 +8,7 @@ using System.Collections.Generic;
 namespace City_of_Calgary_2018
 {
 
+    // Represent's a single geo-coord
     class Point {
         public double x { get; set; }
         public double y { get; set; }
@@ -18,6 +19,8 @@ namespace City_of_Calgary_2018
         }
     }
 
+    // Parses the JSON file and retrieves the community params based on
+    // geo-coords lonInput and latInput
     class DataLayer
     {
 
@@ -41,12 +44,10 @@ namespace City_of_Calgary_2018
                     dynamic currentCommunity = community;
                     dynamic type = community[9];
                     
+                    // Only ignore rural communities
                     if (type == "Residential" || 
                     type == "Industrial" || 
                     type == "Major Park") {
-
-                        // communityName = community[12];
-                        // communitySector = community[13];
 
                         // Clean-up polygon data
                         string polygon = community[8];
@@ -60,33 +61,31 @@ namespace City_of_Calgary_2018
 
                         foreach (string coordList in polygonCoord) {
 
-                            // Console.WriteLine(coordList);
-
-                            // coordList = " -114.070768950013 50.853339905893"
+                            // eg1. coordList = " -114.070768950013 50.853339905893"
+                            // eg2. coordList = "-114.070768950013 50.853339905893"
                             string coordListNew = "";
                             if (coordList[0].Equals(' ')) {
-                                // Console.WriteLine("here");
                                 coordListNew = coordList.Substring(1);
                             } else {
                                 coordListNew = coordList;
                             }
 
-                            // Console.WriteLine(coordListNew);
-
                             string[] coord = coordListNew.Split(' ');
-                            // Console.WriteLine(coord[0]);
-                            // Console.WriteLine(coord[1]);
                             double lon = Double.Parse(coord[0]); // -114.070768950013
                             double lat = Double.Parse(coord[1]); // 50.853339905893
 
                             polygonShape[count++] = new Point(lon, lat);
                         }
 
+                        // Point of interest
                         Point statueLocation = new Point(lonInput, latInput);
 
+                        // Check if point is within this community
                         Intersect intersect = new Intersect();
                         bool result = intersect.isInside(polygonShape, polygonCoord.Length, statueLocation);
 
+                        // If we found the correct community
+                        // update variable values and return
                         if (result) {
                             foundCommunity = true;
                             communityName = currentCommunity[12];
@@ -101,6 +100,8 @@ namespace City_of_Calgary_2018
         }
     }
 
+    // Implementation of the Point Inclusion algorithm
+    // https://www.geeksforgeeks.org/how-to-check-if-a-given-point-lies-inside-a-polygon/
     class Intersect
     {
 
