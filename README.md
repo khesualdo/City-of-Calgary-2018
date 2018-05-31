@@ -8,9 +8,15 @@
 
 Note: We had to use a at least one dataset from the City of Calgary.
 
+## My contribution
+
+I worked on determining in which of Calgary communities our app is being used. For this I used the Community Boundaries dataset from the City of Calgary to get the polygon coordinates of each community. Given a single geo-coordinate I was able to determine the exact community using the Point Inclusion algorithm - [code](https://github.com/00111000/City-of-Calgary-2018/blob/52ca1eacf524b655dbf27bed5421025bac90ea9e/AR%20Pedestrian/Assets/GoogleARCore/Examples/AugmentedImage/Scripts/Boundaries.cs). The idea behind this was to record in which of the communities the people are the most active, as well as send data back to the City of Calgary, such as which art piece is the most famous, where the art piece is located, etc...
+
 ## Inspiration
 
-<!>
+<!q>
+
+We decided to create a solution that will make sure our city steps it's game up with public art. The following are some benefits our solution introduces:
 
 - Citizens do not have a voice
 - Citizens engagement is limited
@@ -31,10 +37,6 @@ Note: We had to use a at least one dataset from the City of Calgary.
 - Used Unity along side with ARCore to create the AR sculptures
 - Used [Community Boundaries dataset](https://data.calgary.ca/Base-Maps/Community-Boundaries/ab7m-fwn6)
 - Used [Point Inclusion algorithm](https://www.geeksforgeeks.org/how-to-check-if-a-given-point-lies-inside-a-polygon/)
-
-## My contribution
-
-I worked on determining in which of Calgary communities our app is being used. For this I used the Community Boundaries dataset from the City of Calgary to get the polygon coordinates of each community. Given a single geo-coordinate I was able to determine the exact community using the Point Inclusion algorithm - [code](https://github.com/00111000/City-of-Calgary-2018/blob/52ca1eacf524b655dbf27bed5421025bac90ea9e/AR%20Pedestrian/Assets/GoogleARCore/Examples/AugmentedImage/Scripts/Boundaries.cs). The idea behind this was to record in which of the communities the people are the most active, as well as send data back to the City of Calgary, such as which art piece is the most famous, where the art piece is located, etc...
 
 ## Challenges we ran into
 
