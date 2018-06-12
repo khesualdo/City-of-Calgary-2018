@@ -55,5 +55,5 @@ This was mostly a learning experience for most members of the group to expose th
 ## What's next for ART++
 - Add new features
   - Donations
-  - Extend to not just art (buildings, parks, bridges, etc...)
+  - Extend to not just art, also include buildings, parks, bridges, etc...
 - Create a portal to upload art models
