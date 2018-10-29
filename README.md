@@ -9,7 +9,7 @@ Augmented Reality application to show art in real-time in real-size.
 - Safety: Create something that helps increase pedestrian safety on Calgary’s streets.
 - Health: Create something that helps encourage Calgarians to get outside and be active.
 
-We had to use a at least one dataset from the City of Calgary.
+We had to use at least one dataset from the City of Calgary.
 
 ## My contribution
 
