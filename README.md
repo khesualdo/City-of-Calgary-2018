@@ -3,6 +3,8 @@ Augmented Reality application to show art in real-time in real-size.
 
 ![Demo GIF](https://github.com/00111000/City-of-Calgary-2018/blob/master/demo.gif)
 
+Theme:
+
 > You can find more details about the pedestrian comfort theme in our FAQs, but in a nutshell, we’re looking for participants to create something that falls into one of the three categories of pedestrian comfort: play, safety and health.
 
 - **Play: Create something that helps people use our streets in a new ways and encourages community.**
